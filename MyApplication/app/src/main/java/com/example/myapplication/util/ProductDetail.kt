@@ -19,6 +19,5 @@ object ProductDetail {
         Product("Tv",15000,"It is used for Entertainment"),
         Product("Mobile",55000,"It is used for Personal work"),
 
-
-    )
+        )
 }
