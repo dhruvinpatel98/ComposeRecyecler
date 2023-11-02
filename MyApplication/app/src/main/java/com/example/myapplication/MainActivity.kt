@@ -90,7 +90,7 @@ fun productCard(product: Product) {
                 style = TextStyle(
                     color = Color.Black,
                     fontFamily = FontFamily.Cursive,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Black
                 )
             )
             Text(
