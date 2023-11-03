@@ -19,6 +19,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.myapplication.showProfile
+import com.example.myapplication.util.EmployeeDetail
 import com.example.myapplication.util.Product
 import com.example.myapplication.util.ProductDetail
 
@@ -76,6 +78,18 @@ fun showProductDetail() {
     LazyColumn(contentPadding = PaddingValues(8.dp)) {
         items(productList) {
             productCard(product = it)
+        }
+    }
+}
+
+@Composable
+fun showEmployeeLazy(){
+    val employeeDetail= remember {
+        EmployeeDetail.productDetailList
+    }
+    LazyColumn(contentPadding = PaddingValues(8.dp)){
+        items(employeeDetail){
+            showProfile( name = it.name, profession = it.profession)
         }
     }
 }
