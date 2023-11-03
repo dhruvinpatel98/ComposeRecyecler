@@ -7,7 +7,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.myapplication.ui.theme.MyApplicationTheme
-import showProductDetail
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,8 +14,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 // A surface container using the 'background' color from the theme
-                showProductDetail()
+                //showProductDetail()
                 //textFieldExample.StyledTextField()
+                //TextModifier()
+                //showProfile( name = "Dhruvin Patel", profession ="Software Engineer" )
+                //NotificationScreen()
+                showQuoteList()
             }
         }
     }
